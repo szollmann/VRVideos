@@ -1,66 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<script src="http://www.google.com/jsapi" type="text/javascript"></script>
-<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Research Project Title</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-Hvb0G7FTb5o5+V7brpO/iTo1V7k1qCZu5o5bvvJe5uLvxR9vGsfMfcDpKKoyi1AW7VjPH3q3z7VHN5Q5i5MHVg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-
-<br>
-<!-- Navbar -->
-<div class="navbar">
-	<a href="#">Home</a>
-	<a href="#">Subtopic 1</a>
-	<a href="#">Subtopic 2</a>
-	<a href="#">Subtopic 3</a>
-	<a href="#">Subtopic 4</a>
-	<a href="#">Contact</a>
-</div>
-
-<!-- Header -->
-<div class="header">
-	<h1>Research Project Title</h1>
-	<p>We are exploring novel ways that allow users to casually capture 3D representations and content for replay in Virtual and Augmented Reality environments. If you are interested in these topics and have interesting research to share, please submit to our Frontiers Research Topics <a href="https://www.frontiersin.org/research-topics/15774/capturing-and-sharing-the-real-world-in-virtual-and-augmented-reality#overview"> Capturing and Sharing the Real World in Virtual and Augmented Reality"</a></p>
+	<header>
+		<div class="container">
+			<h1>Research Project Title</h1>
+			<p>We are exploring novel ways that allow users to casually capture 3D representations and content for replay in Virtual and Augmented Reality environments. If you are interested in these topics and have interesting research to share, please submit to our Frontiers Research Topics <a href="https://www.frontiersin.org/research-topics/15774/capturing-and-sharing-the-real-world-in-virtual-and-augmented-reality#overview">Capturing and Sharing the Real World in Virtual and Augmented Reality</a>.</p>
 		</div>
-		<!-- Subtopic 1 -->
-		<div class="section">
-			<h3>PanoSynthVR</h3>
-			<span class="image featured"><img src="resources/representative_image_small.jpg" alt="" /></span>
-			<p>
-			In this project, we investigated how real-time, 360 degree view synthesis can be achieved on current virtual reality hardware from a single panoramic image input. We introduce a light-weight method to automatically convert a single panoramic input into a multi-cylinder image representation that supports real-time, free-viewpoint view synthesis rendering for virtual reality. We apply an existing convolutional neural network trained on pinhole images to a cylindrical panorama with wrap padding to ensure agreement between the left and right edges. The network outputs a stack of semi-transparent panoramas at varying depths which can be easily rendered and composited with over blending. Quantitative experiments and a user study show that the method produces convincing parallax and fewer artifacts than a textured mesh representation.
+	</header>
 
-			WebXR examples
+	<nav>
+		<div class="container">
+			<ul>
+				<li><a href="#" class="active">Home</a></li>
+				<li><a href="#">Subtopic 1</a></li>
+				<li><a href="#">Subtopic 2</a></li>
+				<li><a href="#">Subtopic 3</a></li>
+				<li><a href="#">Subtopic 4</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+	</nav>
 
-			The WebXR viewer is best experienced in Google Chrome on desktop or on a compatible VR headset.
-				<p><a href="https://visualcomputing.otago.ac.nz/pdfs/CasualVRVideoVRSTposter2020.pdf"><i class="fa fa-file-pdf-o"></i></a> Stefanie Zollmann, Anthony Dickson, Jonathan Ventura <br /><strong><a href="https://dl.acm.org/doi/10.1145/3385956.3422119">CasualVRVideos: VR videos from casual stationary videos</strong></a><br /> VRST '20: 26th ACM Symposium on Virtual Reality Software and Technology, 2020</p>
-		</div>
-		<div class="section">
-			<h3>CasualVRVideos</h3>
-			<span class="image featured"><img src="resources/teaserCasualVRVideos.jpg" alt="" /></span>
-			<p>Thanks to the ubiquity of devices capable of recording and playing back video, the amount of video files is growing at a rapid rate. Most of us have now video recordings of major events in our lives. However, until today, these videos are captured mainly in 2D and are mostly used for screen-based video replay. Currently there is no way for watching them in more immersive environments such as on a VR headset. They are simply not optimized for playback in stereoscopic displays or even tracked Virtual Reality devices. In this work, we present CasualVRVideos, a first approach that works towards solving these issues by extracting spatial information from video footage recorded in 2D, so that it can later be played back in VR displays to increase the immersion. We focus in particular on the challenging scenario when the camera itself is not moving.</p>
-			<p><a href="https://visualcomputing.otago.ac.nz/pdfs/CasualVRVideoVRSTposter2020.pdf"><i class="fa fa-file-pdf-o"></i></a> Stefanie Zollmann, Anthony Dickson, Jonathan Ventura <br /><strong><a href="https://dl.acm.org/doi/10.1145/3385956.3422119">CasualVRVideos: VR videos from casual stationary videos</strong></a><br /> VRST '20: 26th ACM Symposium on Virtual Reality Software and Technology, 2020</p>
-		</div>
-		<!-- Subtopic 2 -->
-		<div class="section">
-			<h3>CasualStereo</h3>
-			<span class="image featured"><img src="resources/stereoPanoOutput.jpg" alt="" /></span>
+	<main>
+		<section class="hero">
+			<div class="container">
+				<h2>Casual VR Videos</h2>
+				<img src="images/teaserCasualVRVideos.jpg" alt="Casual VR Videos">
+				<p>Thanks to the ubiquity of devices capable of recording and playing back video, the amount of video files is growing at a rapid rate. Most of us have now video recordings of major events in our lives. However, until today, these videos are captured mainly in 2D and are mostly used for screen-based video replay. Currently there is no way for watching them in more immersive environments such as on a VR headset. They are simply not optimized for playback in stereoscopic displays or even tracked Virtual Reality devices. In this work, we present CasualVRVideos, a first approach that works towards solving these issues by extracting spatial information from video footage recorded in 2D, so that it can later be played back in VR displays to increase the immersion. We focus in particular on the challenging scenario when the camera itself is not moving.</p>
+				<div class="buttons">
+					<a href="#" class="btn">Read More</a>
+					<a href="#" class="btn">Download PDF <i class="fas fa-file-pdf"></i></a>
+				</div>
+			</	</div>
+	</section>
+
+	<section class="subtopic">
+		<div class="container">
+			<h2>CasualStereo</h2>
+			<img src="images/stereoPanoOutput.jpg" alt="CasualStereo">
 			<p>Hand-held capture of stereo panoramas involves spinning the camera in a roughly circular path to acquire a dense set of views of the scene. However, most existing structure-from-motion pipelines fail when trying to reconstruct such trajectories, due to the small baseline between frames. In this work, we evaluate the use of spherical structure-from-motion for reconstructing handheld stereo panorama captures. The spherical motion constraint introduces a strong regularization on the structure-from-motion process which mitigates the small-baseline problem, making it well-suited to the use case of stereo panorama capture with a handheld camera. We demonstrate the effectiveness of spherical structure-from-motion for casual capture of high-resolution stereo panoramas and validate our results with a user study.</p>
-			<p><a href="https://ieeexplore.ieee.org/abstract/document/9089526/"><i class="fa fa-trophy"></i><i class="fa fa-file-pdf-o"></i></a> <a href="https://visualcomputing.otago.ac.nz/pdfs/BakerIEEEVR2020Casual_preprint.pdf"><i class="fa fa-file-pdf-o"></i></a> Lewis Baker, Steven Mills, Stefanie Zollmann, Jonathan Ventura  <br /><strong>CasualStereo: Casual Capture of Stereo Panoramas with Spherical Structure-from-Motion</strong><br /> IEEE Conference on Virtual Reality and 3D User Interfaces (IEEE VR), 2020, Honourable Mention Award.</p>
-			<p>Lewis Baker, Stefanie Zollmann, Jonathan Ventura <br /><a href=" https://ieeexplore.ieee.org/document/8797794/"><i class="fa fa-file-pdf-o"></i></a><strong>Spherical Structure-from-Motion for Casual Capture of Stereo Panoramas</strong><br /> IEEE Conference on Virtual Reality and 3D User Interfaces
-				(IEEE VR 2019)</p>
-<p><i class="fa fa-github"></i> <a href="https://github.com/jonathanventura/spherical-sfm">Github</a><br />Baker, L., S. Mills, S. Zollmann, and J. Ventura, "CasualStereo: Casual Capture of Stereo Panoramas with Spherical Structure-from-Motion", IEEE Conference on Virtual Reality and 3D User Interfaces (VR), 2020.</p>
+			<div class="buttons">
+				<a href="#" class="btn">Read More</a>
+				<a href="#" class="btn">Download PDF <i class="fas fa-file-pdf"></i></a>
+			</div>
+		</div>
+	</section>
+</main>
 
-</div>daf
-<!-- Contact -->
-<div class="section">
-	<h3>Contact Us</h3>
-	<p>For any inquiries or questions regarding our research project, please contact us at:</p>
-	<p>Email: [insert email address here]</p>
-	<p>Phone: [insert phone number here]</p>
-	<p>Address: [insert address here]</p>
-</div>
-<!-- Footer -->
-<div class="header" style="background-color: #333; color: white;">
-	<p>Copyright &copy; 2023 Research Project Title.
-	<br>All rights reserved.</p>
-</div>
+<footer>
+	<div class="container">
+		<p>&copy; 2023 Research Project Title. All rights reserved.</p>
+		<div class="social-icons">
+			<a href="#"><i class="fab fa-twitter"></i></a>
+			<a href="#"><i class="fab fa-facebook-f"></i></a>
+			<a href="#"><i class="fab fa-instagram"></i></a>
+			<a href="#"><i class="fab fa-linkedin-in"></i></a>
+		</div>
+	</div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" integrity="sha512-ezhy0Gy1OdL/uNBYxbw57LVLN/2t0Ea9gOQ2spOO4Vi4y3Prq3lQLmW5h5LrgRzbMBmYlYX9Dp0xG1zR6MhYYA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>
