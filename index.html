@@ -22,6 +22,17 @@
 		</div>
 		<!-- Subtopic 1 -->
 		<div class="section">
+			<h3>PanoSynthVR</h3>
+			<span class="image featured"><img src="resources/representative_image_small.jpg" alt="" /></span>
+			<p>
+			In this project, we investigated how real-time, 360 degree view synthesis can be achieved on current virtual reality hardware from a single panoramic image input. We introduce a light-weight method to automatically convert a single panoramic input into a multi-cylinder image representation that supports real-time, free-viewpoint view synthesis rendering for virtual reality. We apply an existing convolutional neural network trained on pinhole images to a cylindrical panorama with wrap padding to ensure agreement between the left and right edges. The network outputs a stack of semi-transparent panoramas at varying depths which can be easily rendered and composited with over blending. Quantitative experiments and a user study show that the method produces convincing parallax and fewer artifacts than a textured mesh representation.
+
+			WebXR examples
+
+			The WebXR viewer is best experienced in Google Chrome on desktop or on a compatible VR headset.
+				<p><a href="https://visualcomputing.otago.ac.nz/pdfs/CasualVRVideoVRSTposter2020.pdf"><i class="fa fa-file-pdf-o"></i></a> Stefanie Zollmann, Anthony Dickson, Jonathan Ventura <br /><strong><a href="https://dl.acm.org/doi/10.1145/3385956.3422119">CasualVRVideos: VR videos from casual stationary videos</strong></a><br /> VRST '20: 26th ACM Symposium on Virtual Reality Software and Technology, 2020</p>
+		</div>
+		<div class="section">
 			<h3>CasualVRVideos</h3>
 			<span class="image featured"><img src="resources/teaserCasualVRVideos.jpg" alt="" /></span>
 			<p>Thanks to the ubiquity of devices capable of recording and playing back video, the amount of video files is growing at a rapid rate. Most of us have now video recordings of major events in our lives. However, until today, these videos are captured mainly in 2D and are mostly used for screen-based video replay. Currently there is no way for watching them in more immersive environments such as on a VR headset. They are simply not optimized for playback in stereoscopic displays or even tracked Virtual Reality devices. In this work, we present CasualVRVideos, a first approach that works towards solving these issues by extracting spatial information from video footage recorded in 2D, so that it can later be played back in VR displays to increase the immersion. We focus in particular on the challenging scenario when the camera itself is not moving.</p>
