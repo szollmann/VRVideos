@@ -14,6 +14,7 @@
     	<meta name="author" content="Stefanie Zollmann">
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
 	</head>
 	<body class="is-preload">
 
@@ -35,8 +36,8 @@
 				</nav>
 				<footer>
 					<ul class="icons">
-						<li><a href="https://twitter.com/XRStefanie" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="https://github.com/szollmann" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://twitter.com/XRStefanie"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="https://github.com/szollmann"> <i class="fa fa-github" aria-hidden="true"></i></a></li>
 						</ul>
 				</footer>
 			</section>
@@ -77,12 +78,12 @@
 								</div>
 							</section>
 						-->
-
 						<!-- Three -->
 						<section id="hero">
 
 							<section id="three">
 								<div class="container">
+										<br/>
 									<h3>Research Topics</h3>
 									<p>Thanks to the ubiquity of devices capable of recording and playing back video, the amount of video files is growing at a rapid rate. Most of us have now video recordings of major events in our lives. However, until today, these videos are captured mainly in 2D and are mostly used for screen-based video replay. In this research, we are investigating methods that work towards solving this problem.</p>
 									</br></br>
@@ -96,7 +97,7 @@
 												 <br/>
 												<p> We apply an existing convolutional neural network trained on pinhole images to a cylindrical panorama with wrap padding to ensure agreement between the left and right edges. The network outputs a stack of semi-transparent panoramas at varying depths which can be easily rendered and composited with over blending. Quantitative experiments and a user study show that the method produces convincing parallax and fewer artifacts than a textured mesh representation.
 													</br></br><a href="pdfs/PanoSynthVR_2022preprint.pdf">
-													                                    <i class="fa fa-file-pdf"></i> </a>
+													                                    <i class="fa fa-file-pdf-o"></i> </a>
 													<a href="https://jonathanventura.github.io/PanoSynthVR/">
 													                                    <i class="fa fa-cloud"></i> </a>
 													                                    <a href="https://github.com/jonathanventura/PanoSynthVR">
@@ -124,10 +125,6 @@
 										<p> We create an end- to-end pipeline for creating dynamic 3D video from a monocular video that can be run on consumer hardware in minutes per second of footage, not days. Our pipeline handles the estimation of the camera parameters, depth maps, 3D reconstruction of dynamic foreground and static background elements, and the rendering of the 3D video on a computer or VR headset. We use a state-of-the-art visual transformer model to estimate depth maps which we use to scale COLMAP poses and enable RGB-D fusion with estimated depth data. In our preliminary experiments, we rendered the output in a VR headset and visually compared the method against ground-truth datasets and state-of-the-art NeRF-based methods.
 											</br></br><a href="https://visualcomputing.otago.ac.nz/pdfs/Dickson_AIVR2022.pdf">
 																													<i class="fa fa-file-pdf-o"></i> </a>
-
-
-
-
 																			Anthony Dickson, Jeremy Shanks, Jonathan Ventura, Ali Knott, Stefanie Zollmann,
 																					<br/>
 																											<strong><a href="https://ieeexplore.ieee.org/document/10024470/">VRVideos: A flexible pipeline for Virtual Reality Video Creation
@@ -165,9 +162,9 @@
 													In this work, we evaluate the use of spherical structure-from-motion for reconstructing handheld stereo panorama captures. The spherical motion constraint introduces a strong regularization on the structure-from-motion process which mitigates the small-baseline problem, making it well-suited to the use case of stereo panorama capture with a handheld camera.
 
 													<p>We demonstrate the effectiveness of spherical structure-from-motion for casual capture of high-resolution stereo panoramas and validate our results with a user study. </p>
-								  <p>	<a href="https://ieeexplore.ieee.org/abstract/document/9089526/"> <i class="fa fa-trophy"></i> <i class="fa fa-file-pdf-o"></i> </a> <a href="https://visualcomputing.otago.ac.nz/pdfs/BakerIEEEVR2020Casual_preprint.pdf"></i> <i class="fa fa-file-pdf-o"> </i></a>
+								  <p>	<a href="https://ieeexplore.ieee.org/abstract/document/9089526/"> <i class="fa fa-trophy"></i> </a>  <a href="https://visualcomputing.otago.ac.nz/pdfs/BakerIEEEVR2020Casual_preprint.pdf"></i> <i class="fa fa-file-pdf-o"> </i></a>
     	                             Lewis Baker, Steven Mills, Stefanie Zollmann, Jonathan Ventura  <br/>
-		                            <strong> CasualStereo: Casual Capture of Stereo Panoramas with Spherical Structure-from-Motion</strong><br/>
+		                            <strong> <a href="https://ieeexplore.ieee.org/abstract/document/9089526/"> CasualStereo: Casual Capture of Stereo Panoramas with Spherical Structure-from-Motion </a></strong><br/>
 		                             IEEE Conference on Virtual Reality and 3D User Interfaces (IEEE VR), 2020, Honourable Mention Award.
 		                             <br/>
 									 </p>
@@ -180,9 +177,9 @@
 												Editing VR videos using standard video editing tools is challenging, especially for non-expert users. There is a large gap between the 2D interface used for traditional video editing and the immersive VR environment used for replay. </p>
 											</p></div></br><p>Within this project, we look into methods for immersive video editing bridging this gap. In particular, we propose 6DIVE, a 6 degrees-of-freedom (DoF) immersive video editor. 6DIVE allows users to edit these 6DoF videos directly in an immersive VR environment.
 												</p>
-								  <p>	<a href="https://www.frontiersin.org/articles/10.3389/frvir.2021.676895/full"> <i class="fa fa-file-pdf-o"></i> </a> <a href="https://www.hci.otago.ac.nz/papers/GriffinFrontiers2021.pdf"></i> <i class="fa fa-file-pdf-o"> </i></a>
+								  <p>	<a href="https://www.hci.otago.ac.nz/papers/GriffinFrontiers2021.pdf"></i> <i class="fa fa-file-pdf-o"> </i></a>
     	                             Ruairi Griffin, Tobias Langlotz, Stefanie Zollmann  <br/>
-		                            <strong> 6DIVE: 6 Degrees-of-Freedom Immersive Video Editor </strong><br/>
+		                            <strong> <a href="https://www.frontiersin.org/articles/10.3389/frvir.2021.676895/full"> 6DIVE: 6 Degrees-of-Freedom Immersive Video Editor </a></strong><br/>
 		                             Frontiers in Virtual Reality 2, 75
 		                             <br/>
 									 </p>
